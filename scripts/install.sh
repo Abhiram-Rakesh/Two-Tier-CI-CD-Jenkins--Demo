@@ -102,10 +102,9 @@ if docker compose version &>/dev/null; then
 else
     info "Installing Docker Compose plugin..."
 
-    sudo mkdir -p /usr/local/lib/docker/cli-plugins
-    sudo curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64 \
-        -o /usr/local/lib/docker/cli-plugins/docker-compose
-    sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+    curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64 -o docker-compose
+    chmod +x docker-compose
+    sudo mv docker-compose /usr/local/bin/docker-compose
 fi
 
 # Jenkins Installation
