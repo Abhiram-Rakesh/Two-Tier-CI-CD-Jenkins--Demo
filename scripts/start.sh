@@ -79,7 +79,7 @@ ATTEMPTS=10
 SLEEP=3
 
 for i in $(seq 1 $ATTEMPTS); do
-    if curl -s http://localhost >/dev/null; then
+    if curl localhost >/dev/null; then
         info "Application is up and responding on port 80"
         break
     else
