@@ -19,7 +19,6 @@ This project is designed to be **resume-ready** and mirrors how small-to-medium 
 
 <img width="812" height="802" alt="Two-Tier-CI-CD(Jenkins)-Demo(1)" src="https://github.com/user-attachments/assets/2b907eb2-db3f-4fe8-9617-4936ab83a1ed" />
 
-
 ### Key Design Decisions
 
 - **Docker Compose** manages multi-container orchestration
@@ -296,4 +295,3 @@ This project demonstrates:
 - Proper handling of permissions and secrets
 
 ---
-# Abhiram
